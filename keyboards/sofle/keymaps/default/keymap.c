@@ -92,21 +92,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,----------------------------------------.                    ,-----------------------------------------.
  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | Tab  | Ins  | Pscr | Menu |      |      |                    | PgUp | PWrd |  Up  | NWrd | DLine| Bspc |
+ * | Tab  |      |  7   |  8   |  9   | Menu |                    | PgUp | PWrd |  Up  | NWrd | DLine| Bspc |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | ESC  | LAt  | LCtl |LShift|      | Caps |-------.    ,-------| PgDn | Left | Down | Rigth|  Del | Bspc |
- * |------+------+------+------+------+------|  MUTE  |    |       |------+------+------+------+------+------|
- * |Shift | Undo |  Cut | Copy | Paste|      |-------|    |-------|      | LStr |      | LEnd |      | Shift|
+ * | ESC  |      |  4   |  5   |  6   | Caps |-------.    ,-------| PgDn | Left | Down | Rigth|  Del | Bspc |
+ * |------+------+------+------+------+------|  MUTE |    | MPLY  |------+------+------+------+------+------|
+ * |Shift |  0   |  1   |  2   |  3   |      |-------|    |-------|      | LStr |      | LEnd |      | Shift|
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *            | LGUI | LAlt | LCTR |LOWER | /Enter  /       \Space \  |RAISE | RCTR | RAlt | RGUI |
  *            |      |      |      |      |/       /         \      \ |      |      |      |      |
  *            `----------------------------------'           '------''---------------------------'
  */
 [_RAISE] = LAYOUT(
-  _______, _______ , _______ , _______ , _______ , _______,                           _______,  _______  , _______,  _______ ,  _______ ,_______,
-  _______,  KC_INS,  KC_PSCR,   KC_APP,  XXXXXXX, XXXXXXX,                        KC_PGUP, KC_PRVWD,   KC_UP, KC_NXTWD,C(KC_BSPC), KC_BSPC,
-  _______, KC_LALT,  KC_LCTL,  KC_LSFT,  XXXXXXX, KC_CAPS,                       KC_PGDN,  KC_LEFT, KC_DOWN, KC_RGHT,  KC_DEL, KC_BSPC,
-  _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), XXXXXXX,  _______,       _______,  XXXXXXX, KC_LSTRT, XXXXXXX, KC_LEND,   XXXXXXX, _______,
+  _______, _______ , _______ , _______ , _______ , _______,                           _______,  _______, _______,  _______,  _______, _______,
+  _______, XXXXXXX,      KC_7,     KC_8,     KC_9,  KC_APP,                           KC_PGUP, KC_PRVWD,   KC_UP, KC_NXTWD,C(KC_BSPC), KC_BSPC,
+  _______, XXXXXXX,      KC_4,     KC_5,     KC_6, KC_CAPS,                           KC_PGDN,  KC_LEFT, KC_DOWN,  KC_RGHT,   KC_DEL, KC_BSPC,
+  _______,    KC_0,      KC_1,     KC_2,     KC_3, XXXXXXX,  _______,       _______,  XXXXXXX, KC_LSTRT, XXXXXXX,  KC_LEND,  XXXXXXX, _______,
                          _______, _______, _______, _______, _______,       _______, _______, _______, _______, _______
 ),
 /* ADJUST
