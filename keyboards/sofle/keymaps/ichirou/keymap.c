@@ -98,44 +98,44 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* ,-----------------------------------------------,                    ,-----------------------------------------------, */
 /* |       |       |       |       |       |       |                    |       |       |       |       |       |       | */
 /* |-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------| */
-/* |       |   {   |   &   |   *   |   (   |   }   |                    |       |       |       |       |       | Boot* | */
+/* |       |  [ {  |   &   |   *   |   (   |  ] }  |                    |       |       |       |       |       | Boot* | */
 /* |-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------| */
-/* |       |   :   |   $   |   %   |   ^   |   +   |                    |       | LSft  | LCtrl | LAlt  | LWin  |       | */
+/* |       |       |   $   |   %   |   ^   |  = +  |                    |       | LSft  | LCtrl | LAlt  | LWin  |       | */
 /* |-------+-------+-------+-------+-------+-------|-------,    ,-------|-------+-------+-------+-------+-------+-------| */
-/* |       |   ~   |   !   |   @   |   #   |   |   |       |    |       |       |       |       |       |       |       | */
+/* |       |  ` ~  |   !   |   @   |   #   |  \ |  |       |    |       |       |       |       |       |       |       | */
 /* `-------+-------+-------+-------+-------+-------+-------|    |-------+-------+-------+-------+-------+-------+-------' */
-/*                 |       |       |   (   |   )   |   _   |    | XXXXX |       |       |       |       | */
+/*                 |       |       |   (   |   )   |  - _  |    | XXXXX |       |       |       |       | */
 /*                 |       |       |       |       |       |    | XXXXX |       |       |       |       | */
 /*                 `---------------------------------------'    '---------------------------------------' */
 /**/
 [_SYMBOL] = LAYOUT(
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  XXXXXXX, KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR,                       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, TD(TD_BOOT),
-  XXXXXXX, KC_COLN,  KC_DLR, KC_PERC, KC_CIRC, KC_PLUS,                       XXXXXXX, KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, XXXXXXX,
-  XXXXXXX, KC_TILD, KC_EXLM,   KC_AT, KC_HASH, KC_PIPE, XXXXXXX,     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-                    XXXXXXX, XXXXXXX, KC_LPRN, KC_RPRN, KC_UNDS,     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
+  XXXXXXX, KC_LBRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RBRC,                       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, TD(TD_BOOT),
+  XXXXXXX, XXXXXXX,  KC_DLR, KC_PERC, KC_CIRC,  KC_EQL,                       XXXXXXX, KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, XXXXXXX,
+  XXXXXXX,  KC_GRV, KC_EXLM,   KC_AT, KC_HASH, KC_BSLS, XXXXXXX,     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+                    XXXXXXX, XXXXXXX, KC_LPRN, KC_RPRN, KC_MINS,     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
 ),
 
 /* Number keys */
 /* ,-----------------------------------------------,                    ,-----------------------------------------------, */
 /* |       |       |       |       |       |       |                    |       |       |       |       |       |       | */
 /* |-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------| */
-/* |       |   [   |   7   |   8   |   9   |   ]   |                    |       |       |       |       |       | Boot* | */
+/* |       |       |   7   |   8   |   9   |       |                    |       |       |       |       |       | Boot* | */
 /* |-------+-------+-------+-------+-------+-------|                    |-------+-------+-------+-------+-------+-------| */
-/* |       |   ;   |   4   |   5   |   6   |   =   |                    |       | LSft  | LCtrl | LAlt  | LWin  |       | */
+/* |       |       |   4   |   5   |   6   |       |                    |       | LSft  | LCtrl | LAlt  | LWin  |       | */
 /* |-------+-------+-------+-------+-------+-------|-------,    ,-------|-------+-------+-------+-------+-------+-------| */
-/* |       |   `   |   1   |   2   |   3   |   \   |       |    |       |       |       |       |       |       |       | */
+/* |       |       |   1   |   2   |   3   |       |       |    |       |       |       |       |       |       |       | */
 /* `-------+-------+-------+-------+-------+-------+-------|    |-------+-------+-------+-------+-------+-------+-------' */
-/*                 |       |       |   .   |   0   |   -   |    |       | XXXXX |       |       |       | */
+/*                 |       |       |       |   0   |       |    |       | XXXXX |       |       |       | */
 /*                 |       |       |       |       |       |    |       | XXXXX |       |       |       | */
 /*                 `---------------------------------------'    '---------------------------------------' */
 /**/
 [_NUMBER] = LAYOUT(
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  XXXXXXX, KC_LBRC,    KC_7,    KC_8,    KC_9, KC_RBRC,                         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, TD(TD_BOOT),
-  XXXXXXX, KC_SCLN,    KC_4,    KC_5,    KC_6,  KC_EQL,                         XXXXXXX, KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, XXXXXXX,
-  XXXXXXX,  KC_GRV,    KC_1,    KC_2,    KC_3, KC_BSLS, XXXXXXX,       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-                    XXXXXXX, XXXXXXX,  KC_DOT,    KC_0, KC_MINS,       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
+  XXXXXXX, XXXXXXX,    KC_7,    KC_8,    KC_9, XXXXXXX,                         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, TD(TD_BOOT),
+  XXXXXXX, XXXXXXX,    KC_4,    KC_5,    KC_6, XXXXXXX,                         XXXXXXX, KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, XXXXXXX,
+  XXXXXXX, XXXXXXX,    KC_1,    KC_2,    KC_3, XXXXXXX, XXXXXXX,       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+                    XXXXXXX, XXXXXXX, XXXXXXX,    KC_0, XXXXXXX,       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
 ),
 
 /**/
