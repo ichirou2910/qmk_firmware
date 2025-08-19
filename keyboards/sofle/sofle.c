@@ -87,13 +87,10 @@ void print_status_narrow(void) {
             oled_write_P(PSTR("Mouse"), false);
             break;
         case 3:
-            oled_write_P(PSTR("Sym\n"), false);
+            oled_write_ln_P(PSTR("Func"), false);
             break;
         case 4:
             oled_write_P(PSTR("Num\n"), false);
-            break;
-        case 5:
-            oled_write_ln_P(PSTR("Func"), false);
             break;
         default:
             oled_write_ln_P(PSTR("Undef"), false);
